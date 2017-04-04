@@ -9,7 +9,7 @@ sumNum(data, grp = NULL, rd = 2)
 \arguments{
 \item{data}{a data frame or matrix.}
 
-\item{grp}{possible factor to group by, defaults to NULL.}
+\item{grp}{possible factor to group by, defaults to NULL. Maximum are two groups.}
 
 \item{rd}{round results to \code{rd} digits, default is 2.}
 }

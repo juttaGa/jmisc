@@ -4,18 +4,25 @@
 \alias{cortab}
 \title{cortab}
 \usage{
-cortab(x, y)
+cortab(x, y, method = c("pearson", "kendall", "spearman"), ...)
 }
 \arguments{
 \item{x}{a data frame.}
 
 \item{y}{the response variable.}
+
+\item{method}{one of "pearson", "kendall" or "spearman".}
+
+\item{...}{other parameters passed through.}
 }
 \value{
-prints tables with correlation coefficients and p-values.
+prints table with correlation coefficients, confidence intervals and p-values.
 }
 \description{
-Calculate Pearson correlation coefficients and return a table containing estimates and p-values.
+Calculate correlation coefficients of many x with one y using the function \code{cor.test}.
+}
+\details{
+\texttt{cor.test} is used for calculation and a table with estimates, confidence intervals and p-values is returned.
 }
 \author{
 Jutta Gamper
